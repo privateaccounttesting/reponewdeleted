@@ -28,8 +28,7 @@ jobs:
         run: ./gradlew assembleDebug
       - name: List APK output directory
         run: ls -R app/build/outputs/apk/debug
-      - name: Upload Debug APK
-        uses: actions/upload-artifact@v2
-        with:
-          name: app-debug-apk
-          path: app/build/outputs/apk/debug
+      - name: Publish Debug APK via GitHub CLI
+        run: gh release create debug-${{ github.run_number }} app/build/outputs/apk/debug/app-debug.apk --repo ${{ github.repository }} --title 'Debug Build #${{ github.run_number }}' --notes 'Automated debug APK build'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
