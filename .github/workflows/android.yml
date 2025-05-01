@@ -22,6 +22,8 @@ jobs:
           build-tools: '33.0.1'
       - name: Grant Gradle exec permission
         run: chmod +x ./gradlew
+      - name: Configure Android SDK location
+        run: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
       - name: Build Debug APK
         run: ./gradlew assembleDebug
       - name: Upload Debug APK
