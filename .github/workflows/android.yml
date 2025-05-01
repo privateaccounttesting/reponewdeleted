@@ -16,10 +16,10 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v1
+        uses: r0adkll/android-sdk@v1
         with:
           api-level: 34
-          build-tools: '33.0.1'
+          build-tools: 33.0.1
       - name: Grant Gradle exec permission
         run: chmod +x ./gradlew
       - name: Configure Android SDK location
