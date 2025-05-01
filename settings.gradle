@@ -1,0 +1,2 @@
+rootProject.name = "PirateLiveApp"
+include ":app"

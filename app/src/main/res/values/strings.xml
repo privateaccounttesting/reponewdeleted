@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pirate Live Premium</string>
+    <string name="home_title">Pirate Live Premium</string>
+    <string name="home_description">Zde se zobrazí seznam kanálů</string>
+    <string name="live_tv">Živé TV</string>
+    <string name="movies">Filmy a seriály</string>
+    <string name="ppv">PPV</string>
+    <string name="search">Vyhledávání</string>
+</resources>
