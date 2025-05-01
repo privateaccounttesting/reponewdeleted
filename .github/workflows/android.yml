@@ -16,7 +16,7 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v2
+        uses: android-actions/setup-android@v1
         with:
           api-level: 34
           build-tools: '33.0.1'
